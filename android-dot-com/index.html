@@ -32,8 +32,12 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     
     <!-- DTM -->
-    <script src="//assets.adobedtm.com/8c717b434098baa16315c685ff81572aae207a9b/satelliteLib-e2c07ef8cf6e914da01ab3f779248a645c5961e4-staging.js"></script>
-    
+    <script>
+      if (location.protocol === 'https:')
+          document.write('<script src="//lucassanches.github.io/sandbox/android-dot-com/index.html/8c717b434098baa16315c685ff81572aae207a9b/satelliteLib-e2c07ef8cf6e914da01ab3f779248a645c5961e4-staging.js"></script>')
+      else
+          document.write('<script src="//assets.adobedtm.com/8c717b434098baa16315c685ff81572aae207a9b/satelliteLib-e2c07ef8cf6e914da01ab3f779248a645c5961e4-staging.zip/8c717b434098baa16315c685ff81572aae207a9b/satelliteLib-e2c07ef8cf6e914da01ab3f779248a645c5961e4-staging.js"></script>')
+    </script>
    
     <style>
     #view-source {
@@ -50,6 +54,27 @@
   </head>
   <body>
     
+    <script language="JavaScript" type="text/javascript"><!--
+      /* You may give each page an identifying name, server, and channel on
+      the next lines. */
+      s.pageName="Index"
+      s.server= window.location.hostname
+      s.channel="Android"
+      s.pageType="errorPage"    
+      /* Conversion Variables */
+      s.campaign="Default"
+      s.state="SP"
+      s.zip="01515-000"
+      s.events=""
+      s.products=""
+      s.purchaseID=""
+      s.eVar1=""
+      s.eVar2=""
+      s.eVar3=""
+      s.eVar4=""
+      s.eVar5=""
+      var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+
     <script>
       window.analyticsData = {
     site: {
@@ -353,6 +378,6 @@
     
     <!-- DTM FOOTER -->
     <script type="text/javascript">_satellite.pageBottom();</script>
-    
+
   </body>
 </html>
