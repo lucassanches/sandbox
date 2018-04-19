@@ -51,7 +51,7 @@
 </head>
 
 <body>
-<!-- 
+  <!-- 
 <script>
     window.analyticsData = {
       site: {
@@ -70,22 +70,26 @@
     }
   </script> -->
 
-<script language="JavaScript" type="text/javascript">
+  <script language="JavaScript" type="text/javascript">
+    var s_account = "IDTESTE"
+    var s = s_gi(s_account)
 
-  /* You may give each page an identifying name, server, and channel on
-  the next lines. */
-  s.pageName="Home"
-  s.server="lucassanches.github.io"
-  s.channel="Android"
-  s.pageType="errorPage"
-  /* Conversion Variables */
-  s.campaign="Teste"
-  s.state="SP"
-  s.zip="1000000"
-  s.events="PageView"  
-  
-  /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-  var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+    /* You may give each page an identifying name, server, and channel on
+    the next lines. */
+    s.pageName = "Home"
+    s.server = "lucassanches.github.io"
+    s.channel = "Android"
+    s.pageType = "errorPage"
+    /* Conversion Variables */
+    s.campaign = "Teste"
+    s.state = "SP"
+    s.zip = "1000000"
+    s.events = "PageView"
+
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code = s.t();
+    if (s_code) document.write(s_code) //-->
+  </script>
   <!-- End Analytics code version: H.20.3. -->
 
 
@@ -376,8 +380,10 @@
   <!-- <script src="../../material.min.js"></script> -->
 
   <!-- DTM FOOTER -->
-  <script type="text/javascript">_satellite.pageBottom();</script>
-  
+  <script type="text/javascript">
+    _satellite.pageBottom();
+  </script>
+
 
 </body>
 
