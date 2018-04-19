@@ -28,11 +28,7 @@
    <link rel="stylesheet" href="styles.css">
 
    <script src="//assets.adobedtm.com/8c717b434098baa16315c685ff81572aae207a9b/satelliteLib-e2c07ef8cf6e914da01ab3f779248a645c5961e4-staging.js"></script>
-<script>
-  function linkTrack(){
-    s.tl(this,linkType,linkName, variableOverrides, doneAction);    
-  }
-</script>
+
 
    <style>
    #view-source {
@@ -47,6 +43,26 @@
    </style>
  </head>
  <body>
+<script>
+  window.analyticsData = {
+    site: {
+           "nome": "TESTE",
+           "ambiente": "SBOX",
+           "negocio": "ANDROID",
+           "tipoDeCanal": "Web",
+     },
+    page: {
+           "secao": "lp",
+           "url": "https://lucassanches.github.io/sandbox/android-dot-com/",
+           "nome": "TESTE:SBOX:ANDROID:android-dot-com",
+           "templateName":"landing page", 
+           "v1": "LG",
+           "userID": "123456" 
+     },
+    rule: "pageLoad"
+}
+</script>
+
    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
